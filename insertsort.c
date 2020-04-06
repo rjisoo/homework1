@@ -2,7 +2,7 @@
 CS325 - Homework 1 - 4
 The program reads input values from data.txt
 and sort the data using insert sort
-*/
+*/ 
 
 // Headers
 #include <stdio.h>
