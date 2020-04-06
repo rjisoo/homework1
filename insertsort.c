@@ -40,7 +40,8 @@ int main() {
     // create array according to the size value
 		int *line = malloc(size * sizeof(int));
 		memset(line, 0, size * sizeof(int));
-    for (int i = 0; i < size; i++) {
+		int i;
+    for (i = 0; i < size; i++) {
       fscanf(filePointer, "%d ", &line[i]);
     }
 
@@ -75,7 +76,8 @@ void insertionSort(int *line, int size) {
 	int marker;
 	int tempVal;
 
-	for (int insertIndex = 1; insertIndex < size; insertIndex++)
+	int insertIndex;
+	for (insertIndex = 1; insertIndex < size; insertIndex++)
 	{
 		tempVal = line[insertIndex];
 		marker = insertIndex - 1;
